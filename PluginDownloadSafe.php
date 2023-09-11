@@ -8,6 +8,7 @@ class PluginDownloadSafe{
      * File
      */
     $file = wfUser::getSession()->get('plugin/download/safe/file');
+    $file = wfSettings::replaceDir($file);
     /**
      * Content type
      */
